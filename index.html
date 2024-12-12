@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Charge Your Agents with Heroku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d8b6f1; /* Heroku light purple */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #6f4f97; /* Heroku dark purple */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .topic {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        .topic h2 {
+            margin: 0;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .content {
+            display: none;
+            padding-top: 10px;
+        }
+
+        .arrow {
+            float: right;
+            transition: transform 0.3s ease;
+        }
+
+        .arrow.open {
+            transform: rotate(90deg);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #6f4f97;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Super Charge Your Agents with Heroku</h1>
+    </header>
+
+    <div class="container">
+        <div class="topic">
+            <h2 onclick="toggleContent(this)">
+                Advanced Data Analysis
+                <span class="arrow">▶</span>
+            </h2>
+            <div class="content">
+                <p>Leverage Heroku's computational power for data analysis tasks like uncovering hidden insights, analyzing large datasets, and finding correlations across systems, without overloading Salesforce's CRM functions.</p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2 onclick="toggleContent(this)">
+                Real-time Decision Making
+                <span class="arrow">▶</span>
+            </h2>
+            <div class="content">
+                <p>Use Heroku to process real-time data streams, making quick, data-driven decisions to optimize customer service routing and sales lead prioritization, improving the agility of your workflows.</p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2 onclick="toggleContent(this)">
+                Personalized Recommendations
+                <span class="arrow">▶</span>
+            </h2>
+            <div class="content">
+                <p>Run complex recommendation algorithms on Heroku to provide personalized product and service suggestions for customers based on their historical behavior stored in Salesforce.</p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2 onclick="toggleContent(this)">
+                Generative Content Creation
+                <span class="arrow">▶</span>
+            </h2>
+            <div class="content">
+                <p>Utilize AI models running on Heroku to generate personalized content such as emails, documents, or proposals based on customer data from Salesforce.</p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2 onclick="toggleContent(this)">
+                Scientific Modeling and Simulation
+                <span class="arrow">▶</span>
+            </h2>
+            <div class="content">
+                <p>Use Heroku to run complex simulations and predictive models, leveraging Salesforce data to forecast sales, customer behavior, or product performance in real time.</p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2 onclick="toggleContent(this)">
+                Natural Language Processing (NLP) Advancements
+                <span class="arrow">▶</span>
+            </h2>
+            <div class="content">
+                <p>Integrate Heroku’s NLP capabilities to enhance chatbots, transcription analysis, and sentiment detection in Salesforce, providing more accurate and contextually relevant responses.</p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2 onclick="toggleContent(this)">
+                Computer Vision Applications
+                <span class="arrow">▶</span>
+            </h2>
+            <div class="content">
+                <p>Leverage Heroku’s machine learning models to analyze and interpret images, such as visual recognition of service cases or inventory tracking, without impacting Salesforce performance.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Powered by Heroku</p>
+    </div>
+
+    <script>
+        function toggleContent(element) {
+            const content = element.nextElementSibling;
+            const arrow = element.querySelector('.arrow');
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                arrow.classList.add('open');
+            } else {
+                content.style.display = 'none';
+                arrow.classList.remove('open');
+            }
+        }
+    </script>
+</body>
+</html>
